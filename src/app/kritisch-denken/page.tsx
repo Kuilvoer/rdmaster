@@ -1,3 +1,5 @@
+"use client";
+
 import SectionDivider from "@/components/SectionDivider";
 import { BrainCircuit, Cpu, HandMetal, Hourglass, MessagesSquare, Repeat, Layers, Timer, MessageCircle, Mic, ArrowRight, CheckCircle } from "lucide-react";
 
