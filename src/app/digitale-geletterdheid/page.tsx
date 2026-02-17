@@ -1,5 +1,3 @@
-"use client";
-
 import SectionDivider from "@/components/SectionDivider";
 import { MoveRight, Brain, Lightbulb, ShieldAlert, Quote, CheckCircle, GraduationCap } from "lucide-react";
 

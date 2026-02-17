@@ -1,5 +1,3 @@
-"use client";
-
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
 import { ArrowRight, BookOpen, Brain, Layers, MonitorPlay } from "lucide-react";

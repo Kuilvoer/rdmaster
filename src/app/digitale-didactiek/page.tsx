@@ -1,5 +1,3 @@
-"use client";
-
 import SectionDivider from "@/components/SectionDivider";
 import { Users, Kanban, FileCheck, Layers, ArrowRight, Brain } from "lucide-react";
 
