@@ -30,6 +30,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+            <head>
+                <link rel="icon" href="/globe.svg" type="image/svg+xml" />
+            </head>
             <body
                 className={`${outfit.variable} ${spaceGrotesk.variable} ${playfair.variable} antialiased bg-background text-foreground min-h-screen flex flex-col`}
             >
