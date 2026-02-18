@@ -13,10 +13,10 @@ export default function Home() {
                     <span className="font-sans text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
                         Master Portfolio
                     </span>
-                    <h1 className="font-heading text-6xl md:text-9xl font-black text-foreground leading-[0.9] -ml-1 mb-8">
+                    <h1 className="font-heading text-2xl md:text-9xl font-black text-foreground leading-[0.9] -ml-1 mb-8">
                         Master <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">Onderwijs & Technologie</span>.
                     </h1>
-                    <p className="font-heading text-2xl md:text-3xl text-muted-foreground max-w-2xl leading-relaxed italic">
+                    <p className="font-heading text-lg md:text-3xl text-muted-foreground max-w-2xl leading-relaxed italic">
                         Een zoektocht naar de <em className="text-foreground not-italic">menselijke maat</em> in een gedigitaliseerd onderwijslandschap.
                     </p>
                 </div>
