@@ -82,9 +82,16 @@ export default function Home() {
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
                         <Layers className="w-24 h-24 text-secondary" />
                     </div>
-                    <span className="bg-secondary/10 text-secondary w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                        De Methode
-                    </span>
+
+                    <div className="flex justify-between items-start z-10">
+                        <span className="bg-secondary/10 text-secondary w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Methode
+                        </span>
+                        <div className="w-8 h-8 rounded-full border border-secondary/30 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all">
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+                    </div>
+
                     <div>
                         <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-secondary transition-colors">
                             Digitale Didactiek
@@ -96,16 +103,23 @@ export default function Home() {
                 {/* 4. Literacy (Skill) - Standard (1x1) */}
                 <Link
                     href="/digitale-geletterdheid"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/20 transition-all duration-500 min-h-[200px]"
+                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 min-h-[200px]"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-5 group-hover:opacity-10 transition-opacity">
                         <MonitorPlay className="w-24 h-24 text-foreground" />
                     </div>
-                    <span className="bg-foreground/5 text-foreground w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                        De Vaardigheid
-                    </span>
+
+                    <div className="flex justify-between items-start z-10">
+                        <span className="bg-foreground/5 text-foreground w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Vaardigheid
+                        </span>
+                        <div className="w-8 h-8 rounded-full border border-foreground/30 text-foreground flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-all">
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+                    </div>
+
                     <div>
-                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:underline decoration-2 underline-offset-4 transition-all">
+                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-foreground/80 transition-colors">
                             Digitale Geletterdheid
                         </h2>
                         <p className="text-muted-foreground text-xs mt-2">Knoppen vs. Gedrag.</p>
