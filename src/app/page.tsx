@@ -14,7 +14,7 @@ export default function Home() {
                         Master Portfolio
                     </span>
                     <h1 className="font-heading text-6xl md:text-9xl font-black text-foreground leading-[0.9] -ml-1 mb-8">
-                        Master <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">Connect</span>.
+                        Master <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-tertiary to-secondary">Onderwijs & Technologie</span>.
                     </h1>
                     <p className="font-heading text-2xl md:text-3xl text-muted-foreground max-w-2xl leading-relaxed italic">
                         Een zoektocht naar de <em className="text-foreground not-italic">menselijke maat</em> in een gedigitaliseerd onderwijslandschap.
@@ -130,10 +130,15 @@ export default function Home() {
 
             <SectionDivider color="fill-primary/5" />
 
-            <section className="text-center max-w-2xl mx-auto">
-                <p className="text-2xl font-heading font-bold italic text-foreground">
-                    &quot;Technologie is geen doel op zich, maar een middel.&quot;
+            <section className="text-center max-w-3xl mx-auto space-y-8 mt-12">
+                <p className="text-3xl font-heading font-black italic text-foreground leading-tight">
+                    &quot;Technologie is geen doel op zich, maar een <span className="text-primary">middel</span>.&quot;
                 </p>
+                <div className="flex items-center justify-center gap-4">
+                    <span className="h-px w-12 bg-primary/30"></span>
+                    <cite className="block text-muted-foreground not-italic font-bold tracking-widest uppercase text-sm">Rody Damman</cite>
+                    <span className="h-px w-12 bg-primary/30"></span>
+                </div>
             </section>
         </div>
     );

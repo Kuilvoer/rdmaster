@@ -20,7 +20,7 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
     title: "Master Portfolio | Rody Damman",
-    description: "Portfolio for Master's in Education & Technology",
+    description: "Portfolio voor Master Onderwijs & Technologie",
 };
 
 export default function RootLayout({
@@ -41,7 +41,7 @@ export default function RootLayout({
                     {children}
                 </main>
                 <footer className="py-6 text-center text-muted-foreground text-sm border-t border-border mt-12">
-                    © {new Date().getFullYear()} Rody Damman. Master Connect Portfolio.
+                    © {new Date().getFullYear()} Rody Damman. Master Onderwijs & Technologie Portfolio.
                 </footer>
             </body>
         </html>

@@ -27,7 +27,7 @@ export default function CriticalThinkingPage() {
             <section className="bg-gradient-to-r from-primary/5 to-transparent p-8 md:p-12 rounded-3xl border-l-4 border-primary">
                 <div className="max-w-4xl">
                     <h2 className="font-heading text-3xl font-bold text-foreground mb-4">
-                        Een Pleidooi voor <span className="text-primary italic">Traagheid</span>
+                        Een pleidooi voor <span className="text-primary italic">Traagheid</span>
                     </h2>
                     <p className="text-muted-foreground text-lg leading-relaxed mb-6">
                         In een wereld van directe antwoorden is vertragen een superkracht. Leren vereist wrijving.
@@ -103,7 +103,7 @@ export default function CriticalThinkingPage() {
                     </div>
                     <ul className="space-y-3 text-sm text-muted-foreground bg-muted/30 p-4 rounded-xl">
                         <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-muted-foreground" /> Verplichte tussenproducten</li>
-                        <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-muted-foreground" /> &quot;Verboden te genereren&quot; zones</li>
+                        <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-muted-foreground" /> &quot;Van verbieden naar omarmen&quot; zones, met richtlijnen</li>
                     </ul>
                 </div>
                 <div className="bg-background p-8 rounded-3xl border border-border shadow-sm flex flex-col justify-between">
@@ -117,7 +117,7 @@ export default function CriticalThinkingPage() {
                         </p>
                     </div>
                     <ul className="space-y-3 text-sm text-muted-foreground bg-primary/5 p-4 rounded-xl">
-                        <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-primary" /> Modeling (&quot;Kijk hoe ik dit check&quot;)</li>
+                        <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-primary" /> Modeling (&quot;Kijk hoe kan en hoe ik het check&quot;)</li>
                         <li className="flex gap-2 items-center"><CheckCircle className="w-4 h-4 text-primary" /> Vragen naar het &apos;waarom&apos;</li>
                     </ul>
                 </div>
@@ -129,7 +129,12 @@ export default function CriticalThinkingPage() {
             <section className="space-y-16">
                 <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-heading text-5xl font-bold mb-6 text-foreground">De Driebaansweg</h2>
-                    <p className="text-xl text-muted-foreground font-serif italic">Een model van Dieter Vlaminck (2025) om te bepalen wanneer je AI inzet.</p>
+                    <p className="text-xl text-muted-foreground font-serif italic mb-4">Een model van Dieter Vlaminck (2025) om te bepalen wanneer je AI inzet.</p>
+                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                        In dit model wordt onderscheid gemaakt tussen drie banen: <strong>Keep It</strong>, <strong>Share It</strong> en <strong>Delegate It</strong>.
+                        Het helpt studenten en docenten om bewuste keuzes te maken over de rol van AI in hun werkproces.
+                        Niet alles hoeft geautomatiseerd te worden; soms is de worsteling van het zelf doen essentieel voor diepgaand begrip.
+                    </p>
                 </div>
 
                 {/* Road Visualization */}
@@ -190,9 +195,9 @@ export default function CriticalThinkingPage() {
                         <h3 className="text-2xl font-bold mb-3 font-heading">Prompt Sandwich</h3>
                         <p className="text-muted-foreground text-sm leading-relaxed">
                             Bouw je prompt op als een burger. <br />
-                            <strong>Bodem:</strong> Jouw antwoord.<br />
-                            <strong>Beleg:</strong> AI verrijking.<br />
-                            <strong>Top:</strong> Jouw validatie.
+                            <strong>Bodem (Jouw Concept):</strong> Begin altijd met je eigen ruwe idee of antwoord. <br />
+                            <strong>Beleg (AI Verrijking):</strong> Vraag AI om dit aan te vullen, tegen te spreken of te verbeteren. <br />
+                            <strong>Top (Jouw Validatie):</strong> Eindig met jouw kritische check en synthese. Jij bent de chef.
                         </p>
                     </div>
 

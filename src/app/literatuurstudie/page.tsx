@@ -78,7 +78,7 @@ export default function LiteratureStudyPage() {
             <section className="relative pt-12 text-center md:text-left">
                 <div className="absolute top-0 right-0 -z-10 h-64 w-64 rounded-full bg-tertiary/20 blur-[100px] opacity-60" />
                 <span className="mb-4 inline-block rounded-full bg-tertiary/10 px-4 py-1.5 text-sm font-bold text-tertiary">
-                    Onderzoek (MOT-1)
+                    Product 3: Literatuurstudie
                 </span>
                 <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
                     Theoretische <span className="text-tertiary">Grondslag</span>
