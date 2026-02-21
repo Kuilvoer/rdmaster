@@ -126,6 +126,30 @@ export default function Home() {
                     </div>
                 </Link>
 
+                {/* 5. Vibecoding - Full Width */}
+                <Link
+                    href="/vibecoding"
+                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 min-h-[200px]"
+                >
+                    <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <MonitorPlay className="w-48 h-48 text-cyan-500 translate-x-8 -translate-y-8" />
+                    </div>
+                    <div className="flex justify-between items-center relative z-10 w-full">
+                        <div className="max-w-xl">
+                            <span className="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">
+                                The Workshop
+                            </span>
+                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground group-hover:text-cyan-400 transition-colors">
+                                Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>
+                            </h2>
+                            <p className="text-muted-foreground mt-4 text-lg">Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.</p>
+                        </div>
+                        <div className="w-16 h-16 rounded-full border-2 border-cyan-500/30 text-cyan-400 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-all shadow-lg shadow-cyan-500/0 group-hover:shadow-cyan-500/20 shrink-0">
+                            <ArrowRight className="w-8 h-8" />
+                        </div>
+                    </div>
+                </Link>
+
             </section>
 
             <SectionDivider color="fill-primary/5" />
