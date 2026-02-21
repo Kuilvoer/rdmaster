@@ -11,8 +11,9 @@ const navItems = [
     { name: "Home", href: "/" },
     { name: "Digitale Geletterdheid", href: "/digitale-geletterdheid" },
     { name: "Digitale Didactiek", href: "/digitale-didactiek" },
-    { name: "Kritisch Denken", href: "/kritisch-denken" },
     { name: "Literatuurstudie", href: "/literatuurstudie" },
+    { name: "Kritisch Denken", href: "/kritisch-denken" },
+    { name: "Vibecoding", href: "/vibecoding" },
 ];
 
 export default function Navigation() {
