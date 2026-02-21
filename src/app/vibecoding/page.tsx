@@ -43,6 +43,36 @@ export default function VibecodingPage() {
 
             <SectionDivider color="fill-cyan-500/5" />
 
+            {/* Wat is Vibecoding */}
+            <section className="max-w-4xl mx-auto px-4">
+                <div className="bg-gradient-to-r from-cyan-950/40 to-blue-900/20 border border-cyan-500/20 p-8 md:p-12 rounded-3xl relative overflow-hidden">
+                    <div className="absolute top-0 right-0 -mt-8 -mr-8 text-cyan-500/10">
+                        <Zap className="w-64 h-64" />
+                    </div>
+
+                    <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground relative z-10 flex items-center gap-4">
+                        <Zap className="text-cyan-400 w-8 h-8 md:w-10 md:h-10 shrink-0" />
+                        Wat is Vibecoding?
+                    </h2>
+
+                    <div className="space-y-6 text-lg text-muted-foreground relative z-10 leading-relaxed">
+                        <p>
+                            Vibecoding is een nieuwe benadering van programmeren waarbij je niet langer zelf elke regel code typt, maar als een <span className="text-cyan-400 font-semibold">regisseur</span> samenwerkt met Generatieve AI (zoals ChatGPT, GitHub Copilot of Gemini).
+                        </p>
+                        <p>
+                            Je beschrijft in natuurlijke taal wat je wilt bouwen (je 'vibe' of visie), en de AI vertaalt dit naar werkende code. Het verplaatst de focus van <em className="text-foreground">syntaxis uit je hoofd leren</em> naar <em className="text-foreground">logisch nadenken en problemen oplossen</em>.
+                        </p>
+                        <div className="bg-background/50 p-6 rounded-2xl border-l-4 border-cyan-500 mt-8">
+                            <p className="text-foreground italic font-heading">
+                                &quot;Je hoeft de taal van de machine niet perfect te spreken, zolang je maar helder kunt uitleggen wat de machine voor jou moet doen.&quot;
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <SectionDivider color="fill-cyan-500/5" />
+
             {/* The Foundation: Building a House */}
             <section className="space-y-12">
                 <div className="text-center max-w-3xl mx-auto">
@@ -50,13 +80,13 @@ export default function VibecodingPage() {
                     <p className="text-lg text-muted-foreground">Het bouwen van een website is als het bouwen van een huis. Dit zijn de drie pijlers.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+                <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
                     {/* HTML */}
                     <div className="bg-card p-8 rounded-3xl border border-border hover:border-cyan-500/30 transition-colors group">
                         <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 text-orange-500 group-hover:scale-110 transition-transform">
                             <Code2 className="w-8 h-8" />
                         </div>
-                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">HTML <span className="text-muted-foreground text-lg italic ml-2">(Het Skelet)</span></h3>
+                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">HTML <span className="text-muted-foreground text-lg italic ml-2 block sm:inline-block mt-1 sm:mt-0">(Het Skelet)</span></h3>
                         <p className="text-muted-foreground">Wat staat er op de pagina? De structuur en basis elementen (muren, deuren, ramen).</p>
                     </div>
 
@@ -65,7 +95,7 @@ export default function VibecodingPage() {
                         <div className="w-16 h-16 rounded-2xl bg-blue-500/10 flex items-center justify-center mb-6 text-blue-500 group-hover:scale-110 transition-transform">
                             <Paintbrush className="w-8 h-8" />
                         </div>
-                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">CSS <span className="text-muted-foreground text-lg italic ml-2">(De Opmaak)</span></h3>
+                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">CSS <span className="text-muted-foreground text-lg italic ml-2 block sm:inline-block mt-1 sm:mt-0">(De Opmaak)</span></h3>
                         <p className="text-muted-foreground">Hoe ziet het eruit? Kleur, vorm en presentatie (het schilderwerk, de inrichting).</p>
                     </div>
 
@@ -74,68 +104,113 @@ export default function VibecodingPage() {
                         <div className="w-16 h-16 rounded-2xl bg-yellow-400/10 flex items-center justify-center mb-6 text-yellow-500 group-hover:scale-110 transition-transform">
                             <Zap className="w-8 h-8" />
                         </div>
-                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">JavaScript <span className="text-muted-foreground text-lg italic ml-2">(De Interactie)</span></h3>
+                        <h3 className="text-2xl font-bold font-heading mb-2 text-foreground">JavaScript <span className="text-muted-foreground text-lg italic ml-2 block sm:inline-block mt-1 sm:mt-0">(De Interactie)</span></h3>
                         <p className="text-muted-foreground">Wat doet het? Gedrag, actie en reactie (de elektriciteit, de waterleiding).</p>
                     </div>
                 </div>
             </section>
 
-            {/* The 3-Step Process */}
-            <section className="my-12">
+            <SectionDivider color="fill-cyan-500/5" />
+
+            {/* The 5-Step Process */}
+            <section className="my-12 px-4">
                 <div className="bg-cyan-950/20 border border-cyan-500/20 p-8 md:p-16 rounded-3xl max-w-5xl mx-auto relative overflow-hidden">
                     {/* Background decoration */}
                     <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
                         <RefreshCw className="w-64 h-64 text-cyan-400" />
                     </div>
 
-                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-12 text-center text-foreground">De Workflow</h2>
+                    <div className="text-center mb-16 relative z-10">
+                        <span className="text-cyan-400 font-bold tracking-widest uppercase text-sm mb-4 block">
+                            Stap voor Stap
+                        </span>
+                        <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">Het Vibecoding Proces</h2>
+                    </div>
 
-                    <div className="space-y-12 relative">
+                    <div className="space-y-16 relative">
                         {/* Connecting Line */}
-                        <div className="absolute top-4 left-[2.25rem] bottom-4 w-px bg-cyan-500/20 hidden md:block" />
+                        <div className="absolute top-8 left-[2.25rem] bottom-8 w-px bg-gradient-to-b from-cyan-500/50 via-blue-500/30 to-transparent hidden md:block" />
 
-                        {/* Step 1 */}
-                        <div className="flex flex-col md:flex-row gap-6 relative z-10">
-                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-500 text-cyan-950 flex items-center justify-center font-bold text-xl shadow-lg shadow-cyan-500/20">
+                        {/* Step 1: Idee */}
+                        <div className="flex flex-col md:flex-row gap-8 relative z-10 group">
+                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-950 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-colors shadow-[0_0_15px_rgba(6,182,212,0.5)]">
                                 1
                             </div>
-                            <div className="bg-background/80 backdrop-blur-sm p-6 rounded-2xl border border-border flex-1 border-l-4 border-l-cyan-500">
-                                <h3 className="text-xl font-bold font-heading text-foreground mb-2 flex items-center gap-2">
-                                    <Play className="w-5 h-5 text-cyan-400" /> Genereren & Testen
+                            <div className="flex-1 pt-2">
+                                <h3 className="text-2xl font-bold font-heading text-foreground mb-3 flex items-center gap-3">
+                                    Idee
                                 </h3>
-                                <p className="text-muted-foreground mb-4">Heb je een code? Check en test deze in de browser.</p>
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    Alles begint met een probleem dat je wilt oplossen of iets tofs dat je wilt bouwen. Wat is het doel van je tool? Welke functionaliteiten heb je minimaal nodig (jouw MVP: Minimum Viable Product)?
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 2: Prompt */}
+                        <div className="flex flex-col md:flex-row gap-8 relative z-10 group">
+                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-950 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-colors shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                                2
+                            </div>
+                            <div className="flex-1 pt-2">
+                                <h3 className="text-2xl font-bold font-heading text-foreground mb-3 flex items-center gap-3">
+                                    Prompt
+                                </h3>
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    Vertaal je idee naar een duidelijke, gedetailleerde instructie voor de AI. Geef context, specificeer de gewenste output (bijv. HTML/CSS in één bestand) en beschrijf de functionaliteit stap voor stap.
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* Step 3: Code */}
+                        <div className="flex flex-col md:flex-row gap-8 relative z-10 group">
+                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-950 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-colors shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                                3
+                            </div>
+                            <div className="flex-1 pt-2">
+                                <h3 className="text-2xl font-bold font-heading text-foreground mb-3 flex items-center gap-3">
+                                    Code (Genereren)
+                                </h3>
+                                <p className="text-lg text-muted-foreground mb-4 leading-relaxed">
+                                    Laat de magie gebeuren. De AI genereert de code op basis van jouw prompt. Kopieer deze code naar je ontwikkelomgeving.
+                                </p>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground border border-border">Gemini Pro</span>
-                                    <span className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground border border-border">Antigravity</span>
-                                    <span className="bg-muted px-3 py-1 rounded-full text-xs text-muted-foreground border border-border">VS Code</span>
+                                    <span className="bg-background px-4 py-1.5 rounded-full text-sm font-medium text-cyan-400 border border-cyan-500/30">Gemini</span>
+                                    <span className="bg-background px-4 py-1.5 rounded-full text-sm font-medium text-blue-400 border border-blue-500/30">VS Code / Cursor</span>
+                                    <span className="bg-background px-4 py-1.5 rounded-full text-sm font-medium text-purple-400 border border-purple-500/30">ChatGPT</span>
                                 </div>
                             </div>
                         </div>
 
-                        {/* Step 2 */}
-                        <div className="flex flex-col md:flex-row gap-6 relative z-10">
-                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-900 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-xl">
-                                2
+                        {/* Step 4: Code Bewerken */}
+                        <div className="flex flex-col md:flex-row gap-8 relative z-10 group">
+                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-950 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-colors shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                                4
                             </div>
-                            <div className="bg-background/80 backdrop-blur-sm p-6 rounded-2xl border border-border flex-1">
-                                <h3 className="text-xl font-bold font-heading text-foreground mb-2 flex items-center gap-2">
-                                    <UploadCloud className="w-5 h-5 text-cyan-400" /> Online Zetten <span className="text-xs font-normal font-sans bg-cyan-500/10 text-cyan-400 px-2 py-0.5 rounded-full ml-2">Optioneel</span>
+                            <div className="flex-1 pt-2">
+                                <h3 className="text-2xl font-bold font-heading text-foreground mb-3 flex items-center gap-3">
+                                    Code Bewerken & Testen
                                 </h3>
-                                <p className="text-muted-foreground">Optioneel maar krachtig. Gebruik platforms zoals GitHub om je repository aan te maken en je project te delen met de wereld.</p>
+                                <p className="text-lg text-muted-foreground leading-relaxed mb-4">
+                                    Test de code in je browser. Werkt het niet in één keer? Geen paniek. Kopieer de foutmelding (de Error 404 of console log) en geef deze terug aan de AI. Ga in gesprek (doorprompten) om bugs te fixen of layout aan te passen.
+                                </p>
+                                <div className="bg-background/50 border border-border p-4 rounded-xl inline-block">
+                                    <p className="text-sm font-heading italic text-foreground flex items-center gap-2"><RefreshCw className="w-5 h-5 text-cyan-500" /> &quot;Blijven prutsen, blijven proberen, blijven prompten.&quot;</p>
+                                </div>
                             </div>
                         </div>
 
-                        {/* Step 3 */}
-                        <div className="flex flex-col md:flex-row gap-6 relative z-10">
-                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-900 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-xl">
-                                3
+                        {/* Step 5: Online Zetten */}
+                        <div className="flex flex-col md:flex-row gap-8 relative z-10 group">
+                            <div className="flex-shrink-0 w-16 h-16 rounded-full bg-cyan-950 border-2 border-cyan-500 text-cyan-400 flex items-center justify-center font-bold text-2xl group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-colors shadow-[0_0_15px_rgba(6,182,212,0.5)]">
+                                5
                             </div>
-                            <div className="bg-background/80 backdrop-blur-sm p-6 rounded-2xl border border-border flex-1">
-                                <h3 className="text-xl font-bold font-heading text-foreground mb-2 flex items-center gap-2">
-                                    <RefreshCw className="w-5 h-5 text-cyan-400" /> Optimaliseren (Doorprompten)
+                            <div className="flex-1 pt-2">
+                                <h3 className="text-2xl font-bold font-heading text-foreground mb-3 flex items-center gap-3">
+                                    Online Zetten
                                 </h3>
-                                <p className="text-muted-foreground italic mb-2">"Blijven prutsen, blijven proberen, blijven prompten."</p>
-                                <p className="text-muted-foreground text-sm">Geef niet op bij een Error 404, maar gebruik het om te leren. Elke fout is een kans om je prompt te verbeteren.</p>
+                                <p className="text-lg text-muted-foreground leading-relaxed">
+                                    Als je tool lokaal goed werkt, is het tijd om hem met de wereld (of je klas) te delen. Gebruik platforms zoals GitHub en Vercel om code te hosten en je project live te zetten.
+                                </p>
                             </div>
                         </div>
                     </div>
