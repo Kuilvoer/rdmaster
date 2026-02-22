@@ -6,11 +6,11 @@ export default function VibecodingPage() {
     return (
         <div className="flex flex-col gap-16 pb-24">
             {/* Hero Section */}
-            <section className="relative pt-12 text-center md:text-left overflow-hidden">
+            <section className="relative pt-12 text-center md:text-left">
                 {/* Neon Accents */}
-                <div className="absolute top-0 right-0 -z-10 h-64 w-64 md:h-96 md:w-96 rounded-full bg-cyan-500/20 blur-3xl md:blur-[100px] opacity-50" />
+                <div className="absolute top-0 right-0 -z-10 h-64 w-64 rounded-full bg-cyan-500/20 blur-[100px] opacity-50" />
 
-                <div className="grid md:grid-cols-12 gap-12 items-center">
+                <div className="grid md:grid-cols-12 gap-12 items-start">
                     <div className="md:col-span-7">
                         <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
                             Workshop

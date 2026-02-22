@@ -3,10 +3,10 @@ import { BrainCircuit, Cpu, HandMetal, Hourglass, MessagesSquare, Repeat, Layers
 
 export default function CriticalThinkingPage() {
     return (
-        <div className="flex flex-col gap-24 pb-24">
+        <div className="flex flex-col gap-16 pb-24">
             {/* Hero */}
-            <section className="relative pt-12 text-center md:text-left overflow-hidden">
-                <div className="absolute top-0 right-0 -z-10 h-64 w-64 md:h-96 md:w-96 rounded-full bg-primary/20 blur-3xl md:blur-[100px] opacity-50" />
+            <section className="relative pt-12 text-center md:text-left">
+                <div className="absolute top-0 right-0 -z-10 h-64 w-64 rounded-full bg-primary/20 blur-[100px] opacity-60" />
 
                 <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
                     Presentatie
