@@ -5,17 +5,17 @@ export default function CriticalThinkingPage() {
     return (
         <div className="flex flex-col gap-24 pb-24">
             {/* Hero */}
-            <section className="relative pt-20 md:pt-32 pb-12 text-center md:text-left overflow-hidden">
+            <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 <div className="absolute bottom-0 left-0 -z-10 h-96 w-96 rounded-full bg-secondary/20 blur-[120px] opacity-40" />
                 <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-primary/20 blur-[120px] opacity-40" />
 
                 <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
                     Presentatie
                 </span>
-                <h1 className="mb-6 font-heading text-6xl md:text-8xl font-black text-foreground leading-[0.9] -ml-1">
-                    Kritisch <br /> <span className="text-primary">Denken</span>.
+                <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
+                    Kritisch <br className="md:hidden" /> <span className="text-primary">Denken</span>.
                 </h1>
-                <p className="max-w-2xl text-xl md:text-2xl text-muted-foreground leading-relaxed italic font-serif">
+                <p className="max-w-2xl text-xl text-muted-foreground leading-relaxed italic font-serif">
                     &quot;Laat de robot niet jouw push-ups doen.&quot;
                 </p>
                 <p className="max-w-xl text-lg text-muted-foreground mt-4">

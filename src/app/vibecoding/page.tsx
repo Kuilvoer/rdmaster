@@ -6,24 +6,24 @@ export default function VibecodingPage() {
     return (
         <div className="flex flex-col gap-16 pb-24">
             {/* Hero Section */}
-            <section className="relative pt-12 md:pt-20 overflow-hidden">
+            <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 {/* Neon Accents */}
                 <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-cyan-500/20 blur-[100px] opacity-50" />
                 <div className="absolute bottom-0 left-0 -z-10 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px] opacity-40" />
 
-                <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12 items-center">
+                <div className="grid md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-7">
                         <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
                             Workshop
                         </span>
-                        <h1 className="mb-6 font-heading text-6xl md:text-8xl font-black leading-[0.9] -ml-1">
+                        <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
                             Vibe<span className="text-cyan-400">CODING.</span>
                         </h1>
-                        <p className="max-w-2xl text-xl md:text-2xl text-muted-foreground leading-relaxed italic font-serif mb-6">
+                        <p className="max-w-2xl text-xl text-muted-foreground leading-relaxed italic font-serif mb-6">
                             &quot;Je hoeft de taal van de machine niet perfect te spreken, zolang je maar helder kunt uitleggen wat de machine voor jou moet doen.&quot;
                         </p>
 
-                        <div className="prose prose-lg text-muted-foreground text-lg leading-relaxed space-y-4">
+                        <div className="prose prose-lg text-muted-foreground text-left md:text-lg leading-relaxed space-y-4">
                             <p>
                                 Vibecoding is een nieuwe benadering van programmeren waarbij je niet langer zelf elke regel code typt, maar als een <strong className="text-cyan-400">regisseur</strong> samenwerkt met Generatieve AI (zoals ChatGPT, GitHub Copilot of Gemini).
                             </p>
