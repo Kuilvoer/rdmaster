@@ -9,8 +9,8 @@ export default function CriticalThinkingPage() {
                 <div className="absolute bottom-0 left-0 -z-10 h-96 w-96 rounded-full bg-secondary/20 blur-[120px] opacity-40" />
                 <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-primary/20 blur-[120px] opacity-40" />
 
-                <span className="font-sans text-primary font-bold tracking-widest uppercase text-sm mb-4 block">
-                    Nieuw Inzicht
+                <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
+                    Presentatie
                 </span>
                 <h1 className="mb-6 font-heading text-6xl md:text-8xl font-black text-foreground leading-[0.9] -ml-1">
                     Kritisch <br /> <span className="text-primary">Denken</span>.

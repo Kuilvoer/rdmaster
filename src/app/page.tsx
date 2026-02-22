@@ -24,112 +24,112 @@ export default function Home() {
 
             {/* Bento Grid Navigation */}
             <section className="grid grid-cols-1 md:grid-cols-4 gap-4 md:auto-rows-[250px]">
-                {/* 1. Literature (Foundation) - Large Square (2x2) */}
+                {/* 1. Digitale Geletterdheid - Large Square (2x2) */}
                 <Link
-                    href="/literatuurstudie"
-                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500"
+                    href="/digitale-geletterdheid"
+                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 h-[250px] md:h-auto"
                 >
-                    <div className="absolute top-0 right-0 p-8 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <BookOpen className="w-64 h-64 text-tertiary" />
+                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
+                        <MonitorPlay className="w-64 h-64 text-foreground" />
                     </div>
-                    <div>
-                        <span className="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                            De Basis
+                    <div className="z-10 relative">
+                        <span className="bg-foreground/5 text-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Vaardigheid
                         </span>
-                        <h2 className="font-heading text-4xl md:text-5xl font-bold mt-4 text-foreground group-hover:text-tertiary transition-colors">
-                            Literatuur<br />studie
+                        <h2 className="font-heading text-4xl md:text-5xl font-bold mt-4 text-foreground group-hover:text-foreground/80 transition-colors">
+                            Digitale<br />Geletterdheid
                         </h2>
                     </div>
-                    <div className="flex items-center gap-4 mt-8 md:mt-0">
+                    <div className="flex items-center gap-4 mt-8 md:mt-0 z-10 relative">
                         <p className="text-muted-foreground max-w-sm">
-                            Onderzoek naar metacognitie, self-efficacy en de pedagogische risico's van AI.
+                            Knoppen vs. Gedrag in een gedigitaliseerde wereld.
                         </p>
-                        <div className="w-12 h-12 rounded-full bg-tertiary text-white flex items-center justify-center group-hover:scale-110 transition-transform ml-auto shadow-lg shadow-tertiary/20">
+                        <div className="w-12 h-12 rounded-full border border-foreground/30 text-foreground flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-all ml-auto shrink-0 shadow-lg shadow-foreground/5">
                             <ArrowRight className="w-6 h-6" />
                         </div>
                     </div>
                 </Link>
 
-                {/* 2. Critical Thinking (Mindset) - Wide (2x1) */}
+                {/* 2. Digitale Didactiek - Wide (2x1) */}
                 <Link
-                    href="/kritisch-denken"
-                    className="group relative md:col-span-2 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 min-h-[200px]"
+                    href="/digitale-didactiek"
+                    className="group relative md:col-span-2 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 h-[250px] md:h-auto"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <Brain className="w-32 h-32 text-primary" />
+                        <Layers className="w-32 h-32 text-secondary" />
                     </div>
                     <div className="flex justify-between items-end relative z-10">
                         <div>
-                            <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                                Mindset
+                            <span className="bg-secondary/10 text-secondary w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                De Methode
                             </span>
-                            <h2 className="font-heading text-3xl font-bold mt-3 text-foreground group-hover:text-primary transition-colors">
-                                Kritisch Denken
+                            <h2 className="font-heading text-3xl font-bold mt-3 text-foreground group-hover:text-secondary transition-colors">
+                                Digitale Didactiek
                             </h2>
-                            <p className="text-muted-foreground mt-2 text-sm max-w-xs">The Google Effect & The Human in the Loop.</p>
+                            <p className="text-muted-foreground mt-2 text-sm max-w-xs">TPACK & Ontwerp.</p>
                         </div>
-                        <div className="w-10 h-10 rounded-full border border-primary/30 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all">
+                        <div className="w-10 h-10 rounded-full border border-secondary/30 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all shrink-0">
                             <ArrowRight className="w-5 h-5" />
                         </div>
                     </div>
                 </Link>
 
-                {/* 3. Didactics (Method) - Standard (1x1) */}
+                {/* 3. Literatuurstudie - Standard (1x1) */}
                 <Link
-                    href="/digitale-didactiek"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 min-h-[200px]"
+                    href="/literatuurstudie"
+                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500 h-[250px] md:h-auto"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
-                        <Layers className="w-24 h-24 text-secondary" />
+                        <BookOpen className="w-24 h-24 text-tertiary" />
                     </div>
 
-                    <div className="flex justify-between items-start z-10">
-                        <span className="bg-secondary/10 text-secondary w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                            De Methode
+                    <div className="flex justify-between items-start z-10 relative">
+                        <span className="bg-tertiary/10 text-tertiary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Basis
                         </span>
-                        <div className="w-8 h-8 rounded-full border border-secondary/30 text-secondary flex items-center justify-center group-hover:bg-secondary group-hover:text-white transition-all">
+                        <div className="w-8 h-8 rounded-full bg-tertiary text-white flex items-center justify-center group-hover:scale-110 transition-transform shadow-lg shadow-tertiary/20 shrink-0">
                             <ArrowRight className="w-4 h-4" />
                         </div>
                     </div>
 
-                    <div>
-                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-secondary transition-colors">
-                            Digitale Didactiek
+                    <div className="z-10 relative">
+                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-tertiary transition-colors">
+                            Literatuurstudie
                         </h2>
-                        <p className="text-muted-foreground text-xs mt-2">TPACK & Ontwerp.</p>
+                        <p className="text-muted-foreground text-xs mt-2">Onderzoek naar metacognitie, self-efficacy en de pedagogische risico's van AI.</p>
                     </div>
                 </Link>
 
-                {/* 4. Literacy (Skill) - Standard (1x1) */}
+                {/* 4. Kritisch Denken - Standard (1x1) */}
                 <Link
-                    href="/digitale-geletterdheid"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 min-h-[200px]"
+                    href="/kritisch-denken"
+                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 h-[250px] md:h-auto"
                 >
-                    <div className="absolute bottom-0 right-0 p-2 opacity-5 group-hover:opacity-10 transition-opacity">
-                        <MonitorPlay className="w-24 h-24 text-foreground" />
+                    <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <Brain className="w-24 h-24 text-primary" />
                     </div>
 
-                    <div className="flex justify-between items-start z-10">
-                        <span className="bg-foreground/5 text-foreground w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
-                            De Vaardigheid
+                    <div className="flex justify-between items-start z-10 relative">
+                        <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            Mindset
                         </span>
-                        <div className="w-8 h-8 rounded-full border border-foreground/30 text-foreground flex items-center justify-center group-hover:bg-foreground group-hover:text-background transition-all">
+                        <div className="w-8 h-8 rounded-full border border-primary/30 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-white transition-all shrink-0">
                             <ArrowRight className="w-4 h-4" />
                         </div>
                     </div>
 
-                    <div>
-                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-foreground/80 transition-colors">
-                            Digitale Geletterdheid
+                    <div className="z-10 relative">
+                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-primary transition-colors">
+                            Kritisch Denken
                         </h2>
-                        <p className="text-muted-foreground text-xs mt-2">Knoppen vs. Gedrag.</p>
+                        <p className="text-muted-foreground text-xs mt-2">The Google Effect & The Human in the Loop.</p>
                     </div>
                 </Link>
 
                 {/* 5. Vibecoding - Full Width */}
                 <Link
                     href="/vibecoding"
-                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 min-h-[200px]"
+                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 h-[250px] md:h-auto"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                         <MonitorPlay className="w-48 h-48 text-cyan-500 translate-x-8 -translate-y-8" />
@@ -142,9 +142,9 @@ export default function Home() {
                             <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground group-hover:text-cyan-400 transition-colors">
                                 Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>
                             </h2>
-                            <p className="text-muted-foreground mt-4 text-lg">Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.</p>
+                            <p className="text-muted-foreground mt-4 text-sm md:text-lg">Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.</p>
                         </div>
-                        <div className="w-16 h-16 rounded-full border-2 border-cyan-500/30 text-cyan-400 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-all shadow-lg shadow-cyan-500/0 group-hover:shadow-cyan-500/20 shrink-0">
+                        <div className="w-16 h-16 rounded-full border-2 border-cyan-500/30 text-cyan-400 flex items-center justify-center group-hover:bg-cyan-500 group-hover:text-cyan-950 transition-all shadow-lg shadow-cyan-500/0 group-hover:shadow-cyan-500/20 shrink-0 hidden md:flex">
                             <ArrowRight className="w-8 h-8" />
                         </div>
                     </div>

@@ -14,7 +14,7 @@ export default function VibecodingPage() {
                 <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-7">
                         <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
-                            Product 3: Vibecoding
+                            Workshop
                         </span>
                         <h1 className="mb-6 font-heading text-6xl md:text-8xl font-black leading-[0.9] -ml-1">
                             Vibe<span className="text-cyan-400">CODING.</span>
