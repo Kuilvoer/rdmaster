@@ -1,4 +1,5 @@
 import SectionDivider from "@/components/SectionDivider";
+import PageNavigation from "@/components/PageNavigation";
 import { BrainCircuit, Cpu, HandMetal, Hourglass, MessagesSquare, Repeat, Layers, Timer, MessageCircle, Mic, ArrowRight, CheckCircle } from "lucide-react";
 
 export default function CriticalThinkingPage() {
@@ -235,6 +236,11 @@ export default function CriticalThinkingPage() {
                     <span className="h-px w-12 bg-primary/30"></span>
                 </div>
             </section>
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Literatuurstudie", href: "/literatuurstudie" }}
+                next={{ name: "Vibecoding", href: "/vibecoding" }}
+            />
         </div>
     );
 }

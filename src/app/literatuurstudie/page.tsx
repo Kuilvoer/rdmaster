@@ -1,4 +1,5 @@
 import SectionDivider from "@/components/SectionDivider";
+import PageNavigation from "@/components/PageNavigation";
 import Accordion from "@/components/Accordion";
 import { BookOpen, Quote, Layers, Brain, UserCog, PersonStanding, MonitorPlay, ShieldAlert, Target, Microscope, CheckCircle, Scale, Anchor, Users } from "lucide-react";
 
@@ -215,6 +216,11 @@ export default function LiteratureStudyPage() {
                     </div>
                 </div>
             </section>
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Digitale Didactiek", href: "/digitale-didactiek" }}
+                next={{ name: "Kritisch Denken", href: "/kritisch-denken" }}
+            />
         </div>
     );
 }

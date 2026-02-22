@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @theme {
   --font-sans: var(--font-outfit), sans-serif;
   --font-heading: var(--font-playfair), serif;

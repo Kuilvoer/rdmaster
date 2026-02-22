@@ -203,6 +203,11 @@ export default function DigitalDidacticsPage() {
                     </div>
                 </div>
             </section>
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Digitale Geletterdheid", href: "/digitale-geletterdheid" }}
+                next={{ name: "Literatuurstudie", href: "/literatuurstudie" }}
+            />
         </div>
     );
 }

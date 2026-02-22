@@ -1,4 +1,5 @@
 import Link from "next/link";
+import PageNavigation from "@/components/PageNavigation";
 import SectionDivider from "@/components/SectionDivider";
 import { Download, Code2, Paintbrush, Zap, UploadCloud, RefreshCw, LayoutTemplate, Box, Database, ArrowRight, Lightbulb, CheckCircle } from "lucide-react";
 
@@ -236,6 +237,11 @@ export default function VibecodingPage() {
                     </div>
                 </div>
             </section>
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Kritisch Denken", href: "/kritisch-denken" }}
+                next={{ name: "Home", href: "/" }}
+            />
         </div>
     );
 }

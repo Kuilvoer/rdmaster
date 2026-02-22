@@ -157,6 +157,11 @@ export default function DigitalLiteracyPage() {
                     </div>
                 </div>
             </section>
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Home", href: "/" }}
+                next={{ name: "Digitale Didactiek", href: "/digitale-didactiek" }}
+            />
         </div>
     );
 }

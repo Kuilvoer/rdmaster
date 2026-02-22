@@ -27,7 +27,7 @@ export default function Home() {
                 {/* 1. Digitale Geletterdheid - Large Square (2x2) */}
                 <Link
                     href="/digitale-geletterdheid"
-                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 h-[250px] md:h-auto"
+                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                         <MonitorPlay className="w-64 h-64 text-foreground" />
@@ -53,7 +53,7 @@ export default function Home() {
                 {/* 2. Digitale Didactiek - Wide (2x1) */}
                 <Link
                     href="/digitale-didactiek"
-                    className="group relative md:col-span-2 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 h-[250px] md:h-auto"
+                    className="group relative md:col-span-2 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-secondary/5 hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                         <Layers className="w-32 h-32 text-secondary" />
@@ -77,7 +77,7 @@ export default function Home() {
                 {/* 3. Literatuurstudie - Standard (1x1) */}
                 <Link
                     href="/literatuurstudie"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500 h-[250px] md:h-auto"
+                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-tertiary/5 hover:z-20"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
                         <BookOpen className="w-24 h-24 text-tertiary" />
@@ -103,7 +103,7 @@ export default function Home() {
                 {/* 4. Kritisch Denken - Standard (1x1) */}
                 <Link
                     href="/kritisch-denken"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 h-[250px] md:h-auto"
+                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/5 hover:z-20"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
                         <Brain className="w-24 h-24 text-primary" />
@@ -129,7 +129,7 @@ export default function Home() {
                 {/* 5. Vibecoding - Full Width */}
                 <Link
                     href="/vibecoding"
-                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 h-[250px] md:h-auto"
+                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-cyan-500/5 hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                         <MonitorPlay className="w-48 h-48 text-cyan-500 translate-x-8 -translate-y-8" />
@@ -162,6 +162,14 @@ export default function Home() {
                     <span className="h-px w-12 bg-primary/30"></span>
                     <cite className="block text-muted-foreground not-italic font-bold tracking-widest uppercase text-sm">Rody Damman</cite>
                     <span className="h-px w-12 bg-primary/30"></span>
+                </div>
+                <div className="pt-8">
+                    <Link
+                        href="/literatuurstudie"
+                        className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
+                    >
+                        Start de Verkenning <ArrowRight className="w-5 h-5" />
+                    </Link>
                 </div>
             </section>
         </div>
