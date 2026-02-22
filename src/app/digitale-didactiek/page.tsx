@@ -1,5 +1,6 @@
 import SectionDivider from "@/components/SectionDivider";
 import { Users, Kanban, FileCheck, Layers, ArrowRight, Brain } from "lucide-react";
+import PageNavigation from "@/components/PageNavigation";
 
 export default function DigitalDidacticsPage() {
     return (
@@ -176,20 +177,79 @@ export default function DigitalDidacticsPage() {
                 </div>
             </section>
 
+            {/* Tijdlijn van de Module */}
+            <section className="max-w-5xl mx-auto px-4 w-full mb-16">
+                <div className="text-center mb-12">
+                    <h3 className="font-heading text-3xl font-bold text-foreground">Tijdlijn Module Marktonderzoek</h3>
+                    <p className="text-muted-foreground mt-2">Hoe de hybride aanpak over 5 weken is uitgerold.</p>
+                </div>
+
+                <div className="relative">
+                    {/* Connecting line */}
+                    <div className="absolute top-0 bottom-0 left-[19px] md:left-1/2 w-1 bg-secondary/20 md:-translate-x-1/2 rounded-full" />
+
+                    <div className="space-y-8">
+                        {/* Week 1 */}
+                        <div className="relative flex items-start gap-6 md:justify-end md:w-1/2 md:-ml-[19px] md:pr-12 md:text-right">
+                            <div className="absolute left-0 md:left-auto md:-right-[24px] w-10 h-10 rounded-full bg-secondary flex items-center justify-center text-white font-bold z-10 shadow-lg border-4 border-background">1</div>
+                            <div className="ml-14 md:ml-0 bg-card p-6 rounded-2xl border border-border shadow-sm w-full">
+                                <h4 className="font-bold text-lg mb-1">Week 1: Setup & Doelstelling</h4>
+                                <p className="text-sm text-muted-foreground">Introductie casus. Duo's maken Trello bord aan (TK) en formuleren SMART doelstellingen (CK).</p>
+                            </div>
+                        </div>
+
+                        {/* Week 2 */}
+                        <div className="relative flex items-start gap-6 md:justify-start md:w-1/2 md:ml-auto md:pl-12">
+                            <div className="absolute left-0 md:-left-[24px] w-10 h-10 rounded-full bg-background border-4 border-secondary text-secondary flex items-center justify-center font-bold z-10 shadow-sm">2</div>
+                            <div className="ml-14 md:ml-0 bg-card p-6 rounded-2xl border border-border shadow-sm w-full">
+                                <h4 className="font-bold text-lg mb-1">Week 2: Dataverzameling (6W)</h4>
+                                <p className="text-sm text-muted-foreground">Trello bord vult zich actief. Eerste interventies door docent bij sluimerende duo's (PK).</p>
+                            </div>
+                        </div>
+
+                        {/* Week 3 */}
+                        <div className="relative flex items-start gap-6 md:justify-end md:w-1/2 md:-ml-[19px] md:pr-12 md:text-right">
+                            <div className="absolute left-0 md:left-auto md:-right-[24px] w-10 h-10 rounded-full bg-background border-4 border-secondary text-secondary flex items-center justify-center font-bold z-10 shadow-sm">3</div>
+                            <div className="ml-14 md:ml-0 bg-secondary/5 p-6 rounded-2xl border border-secondary/30 shadow-md w-full relative overflow-hidden">
+                                <div className="absolute top-0 left-0 w-1 h-full bg-secondary" />
+                                <h4 className="font-bold text-lg mb-1 text-secondary">Week 3: Peer Review Canvas</h4>
+                                <p className="text-sm text-muted-foreground">Concepten inleveren. Review met Rubric ingeschakeld (Hard Scaffolding). Focus op kwaliteit.</p>
+                            </div>
+                        </div>
+
+                        {/* Week 4-5 */}
+                        <div className="relative flex items-start gap-6 md:justify-start md:w-1/2 md:ml-auto md:pl-12">
+                            <div className="absolute left-0 md:-left-[24px] w-10 h-10 rounded-full bg-background border-4 border-secondary text-secondary flex items-center justify-center font-bold z-10 shadow-sm">4</div>
+                            <div className="ml-14 md:ml-0 bg-card p-6 rounded-2xl border border-border shadow-sm w-full">
+                                <h4 className="font-bold text-lg mb-1">Week 4-5: Verwerking & Afronding</h4>
+                                <p className="text-sm text-muted-foreground">Feedback verwerken en definitief rapport opleveren. Trello bordarchivering.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Results */}
             <section className="bg-secondary/5 rounded-3xl p-10 md:p-16 mb-12">
                 <h2 className="font-heading text-3xl font-bold mb-8 text-center text-foreground">Resultaten & Impact</h2>
                 <div className="grid md:grid-cols-3 gap-12 text-center">
                     <div className="space-y-4">
-                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-2">
+                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-2 relative">
                             <Kanban className="w-8 h-8" />
+                            {/* Small data badge */}
+                            <div className="absolute -top-2 -right-4 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
+                                +64%
+                            </div>
                         </div>
                         <h4 className="text-xl font-bold text-foreground">Proceswinst</h4>
-                        <p className="text-muted-foreground leading-relaxed">Geen "last minute" paniek meer. Problemen en stagnatie werden al in week 2 geïdentificeerd door naar de Trello-borden te kijken, in plaats van pas bij de deadline.</p>
+                        <p className="text-muted-foreground leading-relaxed">Geen "last minute" paniek meer. Problemen en stagnatie werden al in week 2 geïdentificeerd door naar de Trello-borden te kijken, in plaats van pas bij de deadline. 64% minder uitloop vergeleken met voorgaande jaren.</p>
                     </div>
                     <div className="space-y-4">
-                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-2">
+                        <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-secondary/10 text-secondary mb-2 relative">
                             <FileCheck className="w-8 h-8" />
+                            <div className="absolute -top-2 -right-4 bg-secondary text-white text-xs font-bold px-2 py-1 rounded-full shadow-sm">
+                                Hoger
+                            </div>
                         </div>
                         <h4 className="text-xl font-bold text-foreground">Inhoudelijke Kwaliteit</h4>
                         <p className="text-muted-foreground leading-relaxed">Door de rubrics filterden studenten zelf al fouten uit elkaars werk (zoals niet-SMART doelen). De docent kreeg hierdoor kwalitatief betere concepten te zien.</p>

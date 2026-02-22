@@ -62,7 +62,7 @@ export default function VibecodingPage() {
                             </ul>
 
                             <a
-                                href="/downloads/Ontdek de kracht van vibecoding.pptx"
+                                href="/downloads/Ontdek%20de%20kracht%20van%20vibecoding.pptx"
                                 download
                                 className="w-full flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-cyan-950 font-bold px-6 py-4 rounded-xl transition-all shadow-[0_0_15px_rgba(6,182,212,0.3)] hover:shadow-[0_0_25px_rgba(6,182,212,0.5)]"
                             >
@@ -101,7 +101,14 @@ export default function VibecodingPage() {
                             </div>
                             <h3 className="text-xl font-bold font-heading mb-1 text-foreground">HTML</h3>
                             <span className="text-xs font-bold text-orange-400 uppercase tracking-wide mb-3">Het Skelet</span>
-                            <p className="text-sm text-muted-foreground leading-relaxed">Wat staat er op de pagina? Bepaalt de muren, deuren en structuur.</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed mb-4">Wat staat er op de pagina? Bepaalt de muren, deuren en structuur.</p>
+                            <div className="mt-auto bg-[#0c0a09] p-3 rounded-xl border border-border overflow-x-auto">
+                                <pre className="text-xs font-mono text-orange-300">
+                                    {`<button id="btn">
+  Klik mij!
+</button>`}
+                                </pre>
+                            </div>
                         </div>
 
                         {/* CSS */}
@@ -111,7 +118,14 @@ export default function VibecodingPage() {
                             </div>
                             <h3 className="text-xl font-bold font-heading mb-1 text-foreground">CSS</h3>
                             <span className="text-xs font-bold text-blue-400 uppercase tracking-wide mb-3">De Opmaak</span>
-                            <p className="text-sm text-muted-foreground leading-relaxed">Hoe ziet het eruit? Bepaalt het schilderwerk, de kleur en presentatie.</p>
+                            <p className="text-sm text-muted-foreground leading-relaxed mb-4">Hoe ziet het eruit? Bepaalt het schilderwerk, de kleur en presentatie.</p>
+                            <div className="mt-auto bg-[#0c0a09] p-3 rounded-xl border border-border overflow-x-auto">
+                                <pre className="text-xs font-mono text-blue-300">
+                                    {`button {
+  color: red;
+}`}
+                                </pre>
+                            </div>
                         </div>
 
                         {/* JS */}
@@ -120,8 +134,15 @@ export default function VibecodingPage() {
                                 <Zap className="w-6 h-6" />
                             </div>
                             <h3 className="text-xl font-bold font-heading mb-1 text-foreground">JavaScript</h3>
-                            <span className="text-xs font-bold text-yellow-500 uppercase tracking-wide mb-3">Intersectie</span>
-                            <p className="text-sm text-muted-foreground leading-relaxed">Wat doet het? Zorgt voor interactie, gedrag en elektriciteit.</p>
+                            <span className="text-xs font-bold text-yellow-500 uppercase tracking-wide mb-3">Interactie</span>
+                            <p className="text-sm text-muted-foreground leading-relaxed mb-4">Wat doet het? Zorgt voor interactie, gedrag en elektriciteit.</p>
+                            <div className="mt-auto bg-[#0c0a09] p-3 rounded-xl border border-border overflow-x-auto">
+                                <pre className="text-xs font-mono text-yellow-300">
+                                    {`btn.onClick = () => {
+  alert('Hoi!');
+}`}
+                                </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -172,6 +193,22 @@ export default function VibecodingPage() {
                         <p className="text-muted-foreground text-sm leading-relaxed">
                             Werkt je tool lokaal goed? Dan is de laatste stap lanceren. Platformen als GitHub Pages of Vercel maken het super simpel om je map in een levende website te veranderen.
                         </p>
+                    </div>
+                </div>
+
+                {/* External IDEs */}
+                <div className="mt-16 bg-background/50 backdrop-blur border border-cyan-500/20 rounded-2xl p-6 flex flex-col md:flex-row items-center justify-between gap-6 relative z-10 w-full mx-auto max-w-5xl">
+                    <div>
+                        <strong className="text-lg font-bold text-foreground block mb-1">Direct aan de slag?</strong>
+                        <span className="text-muted-foreground text-sm">Probeer een van deze no-code / low-code AI omgevingen in je browser:</span>
+                    </div>
+                    <div className="flex flex-wrap gap-4">
+                        <a href="https://v0.dev" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-card border border-border rounded-xl text-sm font-bold hover:border-cyan-500 transition-colors flex items-center gap-2">
+                            v0.dev <ArrowRight className="w-3 h-3" />
+                        </a>
+                        <a href="https://bolt.new" target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-card border border-border rounded-xl text-sm font-bold hover:border-cyan-500 transition-colors flex items-center gap-2">
+                            bolt.new <ArrowRight className="w-3 h-3" />
+                        </a>
                     </div>
                 </div>
             </section>

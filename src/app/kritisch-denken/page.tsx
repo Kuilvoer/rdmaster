@@ -1,6 +1,7 @@
 import SectionDivider from "@/components/SectionDivider";
 import PageNavigation from "@/components/PageNavigation";
 import { BrainCircuit, Cpu, HandMetal, Hourglass, MessagesSquare, Repeat, Layers, Timer, MessageCircle, Mic, ArrowRight, CheckCircle } from "lucide-react";
+import Accordion from "@/components/Accordion";
 
 export default function CriticalThinkingPage() {
     return (
@@ -179,49 +180,59 @@ export default function CriticalThinkingPage() {
                 </div>
             </section>
 
-            {/* Practical Tools - Grid (Loose Techniques) */}
+            {/* Practical Tools - Accordion */}
             <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border">
                 <div className="text-center max-w-2xl mx-auto mb-12">
                     <h2 className="font-heading text-4xl font-bold mb-4 text-foreground">Tools voor Thuis</h2>
-                    <p className="text-muted-foreground text-lg">Drie concrete technieken om metacognitie direct toe te passen.</p>
+                    <p className="text-muted-foreground text-lg mb-6">Drie concrete technieken om metacognitie direct toe te passen, gebaseerd op de <em>Prompt Sandwich</em> theorie.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-8">
-                    {/* Tool 1 */}
-                    <div className="bg-background p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors group shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <Layers className="w-6 h-6 text-primary group-hover:text-white" />
-                        </div>
-                        <h3 className="text-2xl font-bold mb-3 font-heading">Prompt Sandwich</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                            Bouw je prompt op als een burger. <br />
-                            <strong>Bodem (Jouw Concept):</strong> Begin altijd met je eigen ruwe idee of antwoord. <br />
-                            <strong>Beleg (AI Verrijking):</strong> Vraag AI om dit aan te vullen, tegen te spreken of te verbeteren. <br />
-                            <strong>Top (Jouw Validatie):</strong> Eindig met jouw kritische check en synthese. Jij bent de chef.
-                        </p>
-                    </div>
-
-                    {/* Tool 2 */}
-                    <div className="bg-background p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors group shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <Timer className="w-6 h-6 text-primary group-hover:text-white" />
-                        </div>
-                        <h3 className="text-2xl font-bold mb-3 font-heading">5-Minuten Timer</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                            De belangrijkste knop is de pauzeknop. Voordat je op &apos;Generate&apos; klikt: wacht 5 minuten. Formuleer een hypothese. Zonder verwachting is de output waardeloos.
-                        </p>
-                    </div>
-
-                    {/* Tool 3 */}
-                    <div className="bg-background p-8 rounded-2xl border border-border hover:border-primary/50 transition-colors group shadow-sm">
-                        <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <MessageCircle className="w-6 h-6 text-primary group-hover:text-white" />
-                        </div>
-                        <h3 className="text-2xl font-bold mb-3 font-heading">Explain Back</h3>
-                        <p className="text-muted-foreground text-sm leading-relaxed">
-                            De ultieme check voor eigenaarschap. Kun je het uitleggen aan een ander zonder naar je scherm te kijken? Pas dan is de kennis van jou.
-                        </p>
-                    </div>
+                <div className="max-w-4xl mx-auto">
+                    <Accordion
+                        items={[
+                            {
+                                title: "1. De Prompt Sandwich",
+                                content: (
+                                    <div className="space-y-4 text-muted-foreground">
+                                        <p>
+                                            Bouw je prompt op als een burger. Zo combineer je AI denkkracht met je eigen expertise.
+                                        </p>
+                                        <ul className="list-disc pl-5 space-y-2">
+                                            <li><strong>Bodem (Jouw Concept):</strong> Begin altijd met je eigen ruwe idee of antwoord. <span className="italic text-primary">"Mijn idee is..."</span></li>
+                                            <li><strong>Beleg (AI Verrijking):</strong> Vraag AI om dit aan te vullen, tegen te spreken of te verbeteren. <span className="italic text-primary">"Geef me 3 tegenargumenten."</span></li>
+                                            <li><strong>Top (Jouw Validatie):</strong> Eindig met jouw kritische check en synthese. Jij bent de chef. <span className="italic text-primary">"Ik verwerk punt 1, want..."</span></li>
+                                        </ul>
+                                    </div>
+                                )
+                            },
+                            {
+                                title: "2. De 5-Minuten Timer",
+                                content: (
+                                    <div className="space-y-4 text-muted-foreground">
+                                        <p>
+                                            De belangrijkste knop is de pauzeknop. Vertraag bewust je proces.
+                                        </p>
+                                        <p>
+                                            <strong>Actie:</strong> Voordat je op &apos;Generate&apos; klikt... wacht 5 minuten. Formuleer éérst een hypothese van wat je verwacht te zien. Als je zonder verwachting de output leest, is je vermogen om er kritisch op te reflecteren verdwenen ("Automation Bias").
+                                        </p>
+                                    </div>
+                                )
+                            },
+                            {
+                                title: "3. Explain Back Methode",
+                                content: (
+                                    <div className="space-y-4 text-muted-foreground">
+                                        <p>
+                                            De ultieme check voor eigenaarschap en begrip, nadat je met een AI hebt gewerkt.
+                                        </p>
+                                        <p>
+                                            <strong>Actie:</strong> Kun je het gegenereerde concept uitleggen aan een ander <em>zonder</em> naar je scherm te kijken? Pas als je de materie in eigen woorden kunt vatten, heb je het geleerd. Anders was het slechts informatieconsumptie.
+                                        </p>
+                                    </div>
+                                )
+                            }
+                        ]}
+                    />
                 </div>
             </section>
 

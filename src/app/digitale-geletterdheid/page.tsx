@@ -1,5 +1,6 @@
 import SectionDivider from "@/components/SectionDivider";
-import { MoveRight, Brain, Lightbulb, ShieldAlert, Quote, CheckCircle, GraduationCap } from "lucide-react";
+import { MoveRight, Brain, Lightbulb, ShieldAlert, Quote, CheckCircle, GraduationCap, Terminal } from "lucide-react";
+import PageNavigation from "@/components/PageNavigation";
 
 export default function DigitalLiteracyPage() {
     return (
@@ -82,40 +83,77 @@ export default function DigitalLiteracyPage() {
                     </p>
                 </div>
 
-                <div className="grid gap-8 md:grid-cols-2">
-                    <div className="bg-background p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="text-sm font-bold text-primary uppercase tracking-wider mb-2">Stap 1: Concept & Prompting</div>
-                        <h3 className="text-2xl font-bold mb-4 font-heading">AI Basics & Bedrijfsprofiel</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Studenten duiken niet direct in het maken van een plan. Ze beginnen met de vraag: <em>&quot;Waar bestaat een goed bedrijfsprofiel eigenlijk uit?&quot;</em>.
-                            Pas nadat ze zelf criteria hebben opgesteld, mogen ze AI gebruiken om een profiel te genereren. Hierbij wordt &apos;Soft Scaffolding&apos; toegepast:
-                            de docent vraagt continu &quot;Waarom koos je deze prompt?&quot; en &quot;Klopt deze output met jouw eigen criteria?&quot;.
-                        </p>
+                {/* Flowchart Steps */}
+                <div className="relative max-w-4xl mx-auto mt-16 mb-24">
+                    {/* Connecting Line (Desktop only) */}
+                    <div className="hidden md:block absolute top-[45px] left-[10%] right-[10%] h-[2px] bg-gradient-to-r from-primary/10 via-primary/40 to-primary/10 -z-10" />
+
+                    <div className="grid md:grid-cols-4 gap-8">
+                        {/* Stap 1 */}
+                        <div className="relative flex flex-col items-center text-center group">
+                            <div className="w-24 h-24 rounded-full bg-background border-4 border-primary/20 flex items-center justify-center mb-6 shadow-xl group-hover:border-primary group-hover:scale-110 transition-all z-10">
+                                <span className="text-3xl font-black text-primary font-heading">1</span>
+                            </div>
+                            <h3 className="font-heading font-bold text-xl mb-3 text-foreground">Concept</h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                Wat is een goed profiel? Studenten bepalen <em>eerst zelf</em> decriteria voordat AI betrokken wordt.
+                            </p>
+                        </div>
+                        {/* Stap 2 */}
+                        <div className="relative flex flex-col items-center text-center group">
+                            <div className="w-24 h-24 rounded-full bg-background border-4 border-primary/20 flex items-center justify-center mb-6 shadow-xl group-hover:border-primary group-hover:scale-110 transition-all z-10">
+                                <span className="text-3xl font-black text-primary font-heading">2</span>
+                            </div>
+                            <h3 className="font-heading font-bold text-xl mb-3 text-foreground">Interpretatie</h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                Output analyseren zonder kopieer-plak werk. Kloppende de gegenereerde suggesties met het doel?
+                            </p>
+                        </div>
+                        {/* Stap 3 */}
+                        <div className="relative flex flex-col items-center text-center group">
+                            <div className="w-24 h-24 rounded-full bg-background border-4 border-primary/20 flex items-center justify-center mb-6 shadow-xl group-hover:border-primary group-hover:scale-110 transition-all z-10">
+                                <span className="text-3xl font-black text-primary font-heading">3</span>
+                            </div>
+                            <h3 className="font-heading font-bold text-xl mb-3 text-foreground">Creatie</h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                Het communicatieplan schrijven. AI als junior-assistent, de student blijft de senior editor.
+                            </p>
+                        </div>
+                        {/* Stap 4 */}
+                        <div className="relative flex flex-col items-center text-center group">
+                            <div className="w-24 h-24 rounded-full bg-background border-4 border-tertiary/20 flex items-center justify-center mb-6 shadow-xl group-hover:border-tertiary group-hover:scale-110 transition-all z-10">
+                                <span className="text-3xl font-black text-tertiary font-heading">4</span>
+                            </div>
+                            <h3 className="font-heading font-bold text-xl mb-3 text-foreground">Reflectie</h3>
+                            <p className="text-sm text-muted-foreground leading-relaxed">
+                                Output omkeren: AI om feedback vragen op het eigen werk en dit verantwoorden.
+                            </p>
+                        </div>
                     </div>
-                    <div className="bg-background p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="text-sm font-bold text-primary uppercase tracking-wider mb-2">Stap 2: Menselijke Interpretatie</div>
-                        <h3 className="text-2xl font-bold mb-4 font-heading">Interpretatie Zonder AI</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Een cruciale stap om afhankelijkheid te doorbreken. Studenten moeten het gegenereerde bedrijfsprofiel zelfstandig, zonder AI, toepassen op een specifieke casus.
-                            Dit dwingt hen om de output echt te lezen en te begrijpen, in plaats van blindelings te kopiëren. Ze ervaren hier dat AI wel data kan leveren,
-                            maar geen context of menselijk inzicht.
-                        </p>
+                </div>
+
+                {/* Try it yourself box */}
+                <div className="max-w-3xl mx-auto bg-card rounded-3xl overflow-hidden border border-primary/20 shadow-2xl relative">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10" />
+                    <div className="flex items-center gap-3 bg-muted/50 px-6 py-4 border-b border-border">
+                        <Terminal className="w-5 h-5 text-primary" />
+                        <h3 className="font-bold text-foreground">Probeer het zelf: De AI Feedback Loop</h3>
                     </div>
-                    <div className="bg-background p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="text-sm font-bold text-primary uppercase tracking-wider mb-2">Stap 3: Creatie</div>
-                        <h3 className="text-2xl font-bold mb-4 font-heading">Strategie Ontwikkeling</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                            Met het zelf aangescherpte profiel en de eigen interpretatie, gaan studenten aan de slag met het eigenlijke product: het Marketing & Communicatieplan.
-                            AI mag hier weer ondersteunen als &apos;junior assistent&apos; voor het genereren van ideeën, maar de student blijft de &apos;senior editor&apos; die de keuzes maakt.
-                        </p>
-                    </div>
-                    <div className="bg-background p-8 rounded-2xl border border-primary/10 shadow-sm hover:shadow-md transition-shadow">
-                        <div className="text-sm font-bold text-primary uppercase tracking-wider mb-2">Stap 4: Reflectie</div>
-                        <h3 className="text-2xl font-bold mb-4 font-heading">De AI Feedback Loop</h3>
-                        <p className="text-muted-foreground leading-relaxed">
-                            In de laatste fase draaien we de rollen om. Studenten voeden hun eigen conceptplan aan de AI en vragen om kritische feedback op basis van specifieke criteria.
-                            Ze moeten vervolgens verantwoorden welke feedback ze overnemen en waarom. Dit traint het vermogen om AI-output op waarde te schatten.
-                        </p>
+                    <div className="p-6 md:p-8 space-y-6">
+                        <p className="text-muted-foreground">Kopieer deze prompt-template om zelf de rollen om te draaien (Stap 4) bij je volgende review moment:</p>
+                        <div className="relative group">
+                            <pre className="bg-[#0c0a09] text-primary-foreground p-6 rounded-xl overflow-x-auto text-sm font-mono border border-primary/10 whitespace-pre-wrap leading-relaxed">
+                                <span className="text-muted-foreground"># Context</span>
+                                Je bent een strenge maar constructieve docent E-Commerce.
+
+                                <span className="text-muted-foreground"># Taak</span>
+                                Analyseer de onderstaande tekst op [VUL CRITERIA IN, bijv: zakelijke toon, haalbaarheid, structuur].
+                                Geef me geen herschrijving, maar geef me 3 gerichte vragen of kritiekpunten waarmee ik het zelf kan verbeteren.
+
+                                <span className="text-muted-foreground"># Mijn inbreng:</span>
+                                [PLAK JE TEKST HIER]
+                            </pre>
+                        </div>
                     </div>
                 </div>
             </section>
