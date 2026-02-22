@@ -8,8 +8,7 @@ export default function VibecodingPage() {
             {/* Hero Section */}
             <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 {/* Neon Accents */}
-                <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-cyan-500/20 blur-[100px] opacity-50" />
-                <div className="absolute bottom-0 left-0 -z-10 h-96 w-96 rounded-full bg-blue-500/10 blur-[100px] opacity-40" />
+                <div className="absolute top-0 right-0 -z-10 h-64 w-64 md:h-96 md:w-96 rounded-full bg-cyan-500/20 blur-3xl md:blur-[100px] opacity-50" />
 
                 <div className="grid md:grid-cols-12 gap-12 items-center">
                     <div className="md:col-span-7">

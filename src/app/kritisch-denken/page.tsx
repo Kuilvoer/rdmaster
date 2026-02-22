@@ -6,8 +6,7 @@ export default function CriticalThinkingPage() {
         <div className="flex flex-col gap-24 pb-24">
             {/* Hero */}
             <section className="relative pt-12 text-center md:text-left overflow-hidden">
-                <div className="absolute bottom-0 left-0 -z-10 h-96 w-96 rounded-full bg-secondary/20 blur-[120px] opacity-40" />
-                <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-primary/20 blur-[120px] opacity-40" />
+                <div className="absolute top-0 right-0 -z-10 h-64 w-64 md:h-96 md:w-96 rounded-full bg-primary/20 blur-3xl md:blur-[100px] opacity-50" />
 
                 <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
                     Presentatie
