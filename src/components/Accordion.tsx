@@ -18,6 +18,9 @@ function AccordionItem({ title, children, isOpen, onClick, color = "bg-tertiary"
         <div className="border border-border rounded-xl overflow-hidden mb-4 bg-card">
             <button
                 onClick={onClick}
+                aria-expanded={isOpen}
+                aria-controls={`accordion-content-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                id={`accordion-header-${title.replace(/\s+/g, '-').toLowerCase()}`}
                 className="flex w-full items-center justify-between p-4 text-left font-medium transition-colors hover:bg-muted/50"
             >
                 <span className="text-lg font-heading font-bold">{title}</span>
@@ -28,6 +31,9 @@ function AccordionItem({ title, children, isOpen, onClick, color = "bg-tertiary"
             <AnimatePresence initial={false}>
                 {isOpen && (
                     <motion.div
+                        id={`accordion-content-${title.replace(/\s+/g, '-').toLowerCase()}`}
+                        role="region"
+                        aria-labelledby={`accordion-header-${title.replace(/\s+/g, '-').toLowerCase()}`}
                         initial="collapsed"
                         animate="open"
                         exit="collapsed"

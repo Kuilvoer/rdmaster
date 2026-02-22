@@ -121,13 +121,21 @@ export default function LiteratureStudyPage() {
                         </p>
                     </div>
 
-                    <div className="p-8 bg-tertiary/5 rounded-3xl border border-tertiary/20 shadow-sm">
+                    <div className="p-8 bg-tertiary/5 rounded-3xl border border-tertiary/20 shadow-sm mb-6">
                         <BookOpen className="w-10 h-10 text-tertiary mb-4" />
                         <h3 className="font-heading font-bold text-xl mb-3 text-foreground">Hoofdvraag</h3>
                         <p className="text-sm text-foreground italic">
                             &quot;Welke didactische principes en strategieën kunnen mbo-docenten inzetten om het metacognitieve denken van eerstejaars studenten te stimuleren bij het gebruik van AI-tools?&quot;
                         </p>
                     </div>
+
+                    <a
+                        href="#"
+                        className="inline-flex items-center justify-center gap-2 bg-tertiary/20 hover:bg-tertiary/30 text-tertiary font-bold px-6 py-4 rounded-xl transition-all border border-tertiary/30 w-full md:w-auto hover:scale-105"
+                    >
+                        <BookOpen className="w-5 h-5" />
+                        Lees het Volledige Rapport
+                    </a>
                 </div>
 
                 <div className="md:col-span-8">
