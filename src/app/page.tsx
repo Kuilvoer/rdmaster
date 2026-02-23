@@ -27,7 +27,7 @@ export default function Home() {
                 {/* 1. Digitale Geletterdheid - Large Square (2x2) */}
                 <Link
                     href="/digitale-geletterdheid"
-                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:z-20"
+                    className="group relative md:col-span-2 md:row-span-2 bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-foreground/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.01] hover:shadow-xl hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-opacity">
                         <MonitorPlay className="w-64 h-64 text-foreground" />
@@ -36,7 +36,7 @@ export default function Home() {
                         <span className="bg-foreground/5 text-foreground px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                             De Vaardigheid
                         </span>
-                        <h2 className="font-heading text-4xl md:text-5xl font-bold mt-4 text-foreground group-hover:text-foreground/80 transition-colors">
+                        <h2 className="font-heading text-2xl md:text-5xl font-bold mt-4 text-foreground group-hover:text-foreground/80 transition-colors">
                             Digitale<br />Geletterdheid
                         </h2>
                     </div>
@@ -53,7 +53,7 @@ export default function Home() {
                 {/* 2. Digitale Didactiek - Wide (2x1) */}
                 <Link
                     href="/digitale-didactiek"
-                    className="group relative md:col-span-2 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-secondary/5 hover:z-20"
+                    className="group relative md:col-span-2 bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-secondary/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-secondary/5 hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                         <Layers className="w-32 h-32 text-secondary" />
@@ -63,7 +63,7 @@ export default function Home() {
                             <span className="bg-secondary/10 text-secondary w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                                 De Methode
                             </span>
-                            <h2 className="font-heading text-3xl font-bold mt-3 text-foreground group-hover:text-secondary transition-colors">
+                            <h2 className="font-heading text-2xl md:text-3xl font-bold mt-3 text-foreground group-hover:text-secondary transition-colors">
                                 Digitale Didactiek
                             </h2>
                             <p className="text-muted-foreground mt-2 text-sm max-w-xs">TPACK & Ontwerp.</p>
@@ -77,7 +77,7 @@ export default function Home() {
                 {/* 3. Literatuurstudie - Standard (1x1) */}
                 <Link
                     href="/literatuurstudie"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-tertiary/5 hover:z-20"
+                    className="group relative bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-tertiary/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-tertiary/5 hover:z-20"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
                         <BookOpen className="w-24 h-24 text-tertiary" />
@@ -103,7 +103,7 @@ export default function Home() {
                 {/* 4. Kritisch Denken - Standard (1x1) */}
                 <Link
                     href="/kritisch-denken"
-                    className="group relative bg-card rounded-3xl p-6 flex flex-col justify-between border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/5 hover:z-20"
+                    className="group relative bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-primary/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-primary/5 hover:z-20"
                 >
                     <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
                         <Brain className="w-24 h-24 text-primary" />
@@ -129,7 +129,7 @@ export default function Home() {
                 {/* 5. Vibecoding - Full Width */}
                 <Link
                     href="/vibecoding"
-                    className="group relative md:col-span-4 bg-card rounded-3xl p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 h-[250px] md:h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-cyan-500/5 hover:z-20"
+                    className="group relative md:col-span-4 bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-center border border-border overflow-hidden hover:border-cyan-500/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.01] hover:shadow-xl hover:shadow-cyan-500/5 hover:z-20"
                 >
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                         <MonitorPlay className="w-48 h-48 text-cyan-500 translate-x-8 -translate-y-8" />
@@ -137,9 +137,9 @@ export default function Home() {
                     <div className="flex justify-between items-center relative z-10 w-full">
                         <div className="max-w-xl">
                             <span className="bg-cyan-500/10 text-cyan-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4 inline-block">
-                                The Workshop
+                                De workshop
                             </span>
-                            <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground group-hover:text-cyan-400 transition-colors">
+                            <h2 className="font-heading text-2xl md:text-5xl font-bold text-foreground group-hover:text-cyan-400 transition-colors">
                                 Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>
                             </h2>
                             <p className="text-muted-foreground mt-4 text-sm md:text-lg">Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.</p>

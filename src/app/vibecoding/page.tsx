@@ -1,25 +1,25 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
 import { Download, Code2, Paintbrush, Zap, Play, UploadCloud, RefreshCw, LayoutTemplate, Box, Database, ArrowRight } from "lucide-react";
+import PageNavigation from "@/components/PageNavigation";
 
 export default function VibecodingPage() {
     return (
-        <div className="flex flex-col gap-24 pb-24">
+        <div className="flex flex-col gap-16 pb-24">
             {/* Hero Section */}
-            <section className="relative pt-20 md:pt-32 pb-12 text-center md:text-left overflow-hidden">
+            <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 {/* Electric Blue Halos */}
-                <div className="absolute bottom-0 right-0 -z-10 h-96 w-96 rounded-full bg-cyan-500/20 blur-[120px] opacity-40" />
-                <div className="absolute top-0 left-0 -z-10 h-96 w-96 rounded-full bg-cyan-400/10 blur-[120px] opacity-40" />
+                <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-cyan-500/20 blur-[100px] opacity-50" />
 
                 <div className="max-w-4xl mx-auto md:mx-0">
-                    <span className="font-sans text-cyan-400 font-bold tracking-widest uppercase text-sm mb-4 block">
-                        Workshop Digital Recap
+                    <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
+                        De workshop
                     </span>
-                    <h1 className="mb-6 font-heading text-6xl md:text-9xl font-black text-foreground leading-[0.9] -ml-1">
+                    <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
                         Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>.
                     </h1>
                     <p className="max-w-2xl text-xl md:text-3xl text-muted-foreground leading-relaxed font-heading italic">
-                        Ontdek de kracht van je eigen webtools bouwen met Generatieve AI.
+                        Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.
                     </p>
 
                     <div className="mt-12 bg-cyan-950/20 border-l-4 border-cyan-500 p-6 md:p-8 rounded-r-3xl rounded-bl-3xl max-w-3xl backdrop-blur-sm">
@@ -44,13 +44,13 @@ export default function VibecodingPage() {
             <SectionDivider color="fill-cyan-500/5" />
 
             {/* Wat is Vibecoding */}
-            <section className="max-w-4xl mx-auto px-4">
+            <section className="max-w-4xl mx-auto px-4 w-full">
                 <div className="bg-gradient-to-r from-cyan-950/40 to-blue-900/20 border border-cyan-500/20 p-8 md:p-12 rounded-3xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 -mt-8 -mr-8 text-cyan-500/10">
                         <Zap className="w-64 h-64" />
                     </div>
 
-                    <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground relative z-10 flex items-center gap-4">
+                    <h2 className="font-heading text-3xl md:text-4xl font-bold mb-6 text-foreground relative z-10 flex items-center gap-4">
                         <Zap className="text-cyan-400 w-8 h-8 md:w-10 md:h-10 shrink-0" />
                         Wat is Vibecoding?
                     </h2>
@@ -75,8 +75,8 @@ export default function VibecodingPage() {
 
             {/* The Foundation: Building a House */}
             <section className="space-y-12">
-                <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground">De Fundering</h2>
+                <div className="text-center max-w-3xl mx-auto px-4">
+                    <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground">De Fundering</h2>
                     <p className="text-lg text-muted-foreground">Het bouwen van een website is als het bouwen van een huis. Dit zijn de drie pijlers.</p>
                 </div>
 
@@ -124,7 +124,7 @@ export default function VibecodingPage() {
                         <span className="text-cyan-400 font-bold tracking-widest uppercase text-sm mb-4 block">
                             Stap voor Stap
                         </span>
-                        <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground">Het Vibecoding Proces</h2>
+                        <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground">Het Vibecoding Proces</h2>
                     </div>
 
                     <div className="space-y-16 relative">
@@ -219,8 +219,8 @@ export default function VibecodingPage() {
 
             {/* Showcase / Inspiratie */}
             <section className="space-y-12">
-                <div className="text-center max-w-3xl mx-auto">
-                    <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground">Inspiratie</h2>
+                <div className="text-center max-w-3xl mx-auto px-4">
+                    <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground">Inspiratie</h2>
                     <p className="text-lg text-muted-foreground">Wat is er allemaal mogelijk? Een greep uit gerealiseerde projecten.</p>
                 </div>
 
@@ -266,7 +266,7 @@ export default function VibecodingPage() {
             {/* Ideeën Generator */}
             <section className="bg-gradient-to-b from-transparent to-cyan-950/10 rounded-3xl p-8 md:p-12 border border-border max-w-5xl mx-auto w-full">
                 <div className="text-center mb-10">
-                    <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">Ideeën Generator</h2>
+                    <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">Ideeën Generator</h2>
                     <p className="text-muted-foreground">Weet je even niet wat je moet bouwen? Begin hier.</p>
                 </div>
 
@@ -297,7 +297,7 @@ export default function VibecodingPage() {
 
             {/* Afsluiting / CTA */}
             <section className="text-center max-w-3xl mx-auto mt-8">
-                <p className="text-2xl md:text-3xl font-heading font-bold text-foreground leading-relaxed mb-8">
+                <p className="text-xl md:text-3xl font-heading font-bold text-foreground leading-relaxed mb-8">
                     &quot;Begin klein en simpel. <span className="text-cyan-400 italic">The sky is the limit.</span>&quot;
                 </p>
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -311,6 +311,12 @@ export default function VibecodingPage() {
                     </a>
                 </div>
             </section>
+
+            {/* Navigation */}
+            <PageNavigation
+                prev={{ name: "Kritisch Denken", href: "/kritisch-denken" }}
+                next={{ name: "Home", href: "/" }}
+            />
         </div>
     );
 }
