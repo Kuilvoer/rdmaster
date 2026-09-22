@@ -4,7 +4,7 @@ import PageNavigation from "@/components/PageNavigation";
 
 export default function DigitalLiteracyPage() {
     return (
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 pb-24">
             {/* Hero */}
             <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-primary/20 blur-[100px] opacity-50" />
@@ -203,3 +203,4 @@ export default function DigitalLiteracyPage() {
         </div>
     );
 }
+

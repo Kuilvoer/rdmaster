@@ -1,6 +1,6 @@
 import Link from "next/link";
 import SectionDivider from "@/components/SectionDivider";
-import { ArrowRight, BookOpen, Brain, Layers, MonitorPlay } from "lucide-react";
+import { ArrowRight, BookOpen, Brain, Layers, MonitorPlay, Target, Scale, Wrench } from "lucide-react";
 
 export default function Home() {
     return (
@@ -150,6 +150,82 @@ export default function Home() {
                     </div>
                 </Link>
 
+                {/* 6. GOAI - 2x1 */}
+                <Link
+                    href="/gepersonaliseerd-leren"
+                    className="group relative md:col-span-2 bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-indigo-500/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-indigo-500/5 hover:z-20"
+                >
+                    <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-20 transition-opacity">
+                        <Target className="w-32 h-32 text-indigo-400" />
+                    </div>
+                    <div className="flex justify-between items-end relative z-10">
+                        <div>
+                            <span className="bg-indigo-500/10 text-indigo-400 w-fit px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                                Het Toetspalet
+                            </span>
+                            <h2 className="font-heading text-2xl md:text-3xl font-bold mt-3 text-foreground group-hover:text-indigo-400 transition-colors">
+                                Gepersonaliseerd Leren
+                            </h2>
+                            <p className="text-muted-foreground mt-2 text-sm max-w-xs">De AI-Audit en Criteriumgericht Interviewen.</p>
+                        </div>
+                        <div className="w-10 h-10 rounded-full border border-indigo-500/30 text-indigo-400 flex items-center justify-center group-hover:bg-indigo-500 group-hover:text-white transition-all shrink-0">
+                            <ArrowRight className="w-5 h-5" />
+                        </div>
+                    </div>
+                </Link>
+
+                {/* 7. Ethische Dilemma's - 1x1 */}
+                <Link
+                    href="/ethische-dilemmas"
+                    className="group relative bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-purple-500/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-purple-500/5 hover:z-20"
+                >
+                    <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <Scale className="w-24 h-24 text-purple-400" />
+                    </div>
+
+                    <div className="flex justify-between items-start z-10 relative">
+                        <span className="bg-purple-500/10 text-purple-400 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Delta
+                        </span>
+                        <div className="w-8 h-8 rounded-full border border-purple-500/30 text-purple-400 flex items-center justify-center group-hover:bg-purple-500 group-hover:text-white transition-all shrink-0">
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+                    </div>
+
+                    <div className="z-10 relative mt-8">
+                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-purple-400 transition-colors">
+                            Ethische Dilemma's
+                        </h2>
+                        <p className="text-muted-foreground text-xs mt-2">Waardenbotsing tussen ambacht en technologie.</p>
+                    </div>
+                </Link>
+
+                {/* 8. CMT - 1x1 */}
+                <Link
+                    href="/creeren-met-technologie"
+                    className="group relative bg-card rounded-3xl p-6 md:p-8 flex flex-col justify-between border border-border overflow-hidden hover:border-emerald-500/50 transition-all duration-500 min-h-[220px] md:min-h-0 h-auto hover:scale-[1.02] hover:shadow-xl hover:shadow-emerald-500/5 hover:z-20"
+                >
+                    <div className="absolute bottom-0 right-0 p-2 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <Wrench className="w-24 h-24 text-emerald-500" />
+                    </div>
+
+                    <div className="flex justify-between items-start z-10 relative">
+                        <span className="bg-emerald-500/10 text-emerald-500 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                            De Theorie
+                        </span>
+                        <div className="w-8 h-8 rounded-full border border-emerald-500/30 text-emerald-500 flex items-center justify-center group-hover:bg-emerald-500 group-hover:text-white transition-all shrink-0">
+                            <ArrowRight className="w-4 h-4" />
+                        </div>
+                    </div>
+
+                    <div className="z-10 relative mt-8">
+                        <h2 className="font-heading text-2xl font-bold mt-2 text-foreground group-hover:text-emerald-500 transition-colors">
+                            Creëren met Tech.
+                        </h2>
+                        <p className="text-muted-foreground text-xs mt-2">Constructionisme en Computational Thinking.</p>
+                    </div>
+                </Link>
+
             </section>
 
             <SectionDivider color="fill-primary/5" />
@@ -165,7 +241,7 @@ export default function Home() {
                 </div>
                 <div className="pt-8">
                     <Link
-                        href="/literatuurstudie"
+                        href="/digitale-geletterdheid"
                         className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 rounded-full transition-all hover:scale-105 hover:shadow-lg hover:shadow-primary/20"
                     >
                         Start de Verkenning <ArrowRight className="w-5 h-5" />

@@ -10,14 +10,12 @@ export default function VibecodingPage() {
             <section className="relative pt-12 text-center md:text-left overflow-hidden">
                 {/* Electric Blue Halos */}
                 <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-cyan-500/20 blur-[100px] opacity-50" />
-
-                <div className="max-w-4xl mx-auto md:mx-0">
-                    <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
-                        De workshop
-                    </span>
-                    <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
-                        Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>.
-                    </h1>
+                <span className="mb-4 inline-block rounded-full bg-cyan-500/10 px-4 py-1.5 text-sm font-bold text-cyan-400">
+                    Product 8: Vibecoding
+                </span>
+                <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
+                    Vibe<span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">coding</span>.
+                </h1>
                     <p className="max-w-2xl text-xl md:text-3xl text-muted-foreground leading-relaxed font-heading italic">
                         Ontdek de kracht van je eigen webtools bouwen met Generatieve AI. Een avontuur waarbij je codeert door te doen.
                     </p>
@@ -38,13 +36,12 @@ export default function VibecodingPage() {
                             Download Presentatie
                         </a>
                     </div>
-                </div>
             </section>
 
             <SectionDivider color="fill-cyan-500/5" />
 
             {/* Wat is Vibecoding */}
-            <section className="max-w-4xl mx-auto px-4 w-full">
+            <section className="w-full">
                 <div className="bg-gradient-to-r from-cyan-950/40 to-blue-900/20 border border-cyan-500/20 p-8 md:p-12 rounded-3xl relative overflow-hidden">
                     <div className="absolute top-0 right-0 -mt-8 -mr-8 text-cyan-500/10">
                         <Zap className="w-64 h-64" />
@@ -75,12 +72,12 @@ export default function VibecodingPage() {
 
             {/* The Foundation: Building a House */}
             <section className="space-y-12">
-                <div className="text-center max-w-3xl mx-auto px-4">
+                <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground">De Fundering</h2>
                     <p className="text-lg text-muted-foreground">Het bouwen van een website is als het bouwen van een huis. Dit zijn de drie pijlers.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto px-4">
+                <div className="grid md:grid-cols-3 gap-6">
                     {/* HTML */}
                     <div className="bg-card p-8 rounded-3xl border border-border hover:border-cyan-500/30 transition-colors group">
                         <div className="w-16 h-16 rounded-2xl bg-orange-500/10 flex items-center justify-center mb-6 text-orange-500 group-hover:scale-110 transition-transform">
@@ -114,7 +111,7 @@ export default function VibecodingPage() {
 
             {/* The 5-Step Process */}
             <section className="my-12 px-4">
-                <div className="bg-cyan-950/20 border border-cyan-500/20 p-8 md:p-16 rounded-3xl max-w-5xl mx-auto relative overflow-hidden">
+                <div className="bg-cyan-950/20 border border-cyan-500/20 p-8 md:p-16 rounded-3xl relative overflow-hidden">
                     {/* Background decoration */}
                     <div className="absolute top-0 right-0 p-12 opacity-5 pointer-events-none">
                         <RefreshCw className="w-64 h-64 text-cyan-400" />
@@ -219,52 +216,52 @@ export default function VibecodingPage() {
 
             {/* Showcase / Inspiratie */}
             <section className="space-y-12">
-                <div className="text-center max-w-3xl mx-auto px-4">
+                <div className="text-center max-w-3xl mx-auto">
                     <h2 className="font-heading text-3xl md:text-5xl font-bold mb-6 text-foreground">Inspiratie</h2>
                     <p className="text-lg text-muted-foreground">Wat is er allemaal mogelijk? Een greep uit gerealiseerde projecten.</p>
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto px-4">
+                <div className="grid md:grid-cols-3 gap-6">
                     {/* Project 1 */}
-                    <div className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
+                    <a href="https://kuilvoer.github.io/islandexplorer/" target="_blank" rel="noopener noreferrer" className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
                         <div className="aspect-video bg-muted flex items-center justify-center relative overflow-hidden">
                             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-cyan-400 via-background to-background group-hover:opacity-40 transition-opacity" />
                             <LayoutTemplate className="w-16 h-16 text-cyan-500/50 group-hover:scale-110 transition-transform" />
                         </div>
                         <div className="p-6 flex-1 flex flex-col">
-                            <h3 className="text-xl font-bold font-heading text-foreground mb-2">MBOTech</h3>
-                            <p className="text-sm text-muted-foreground flex-1">Dashboard met een overzicht van toepassingen voor AI, VR en AR in het onderwijs.</p>
+                            <h3 className="text-xl font-bold font-heading text-foreground mb-2 group-hover:text-cyan-400 transition-colors">Island Explorer</h3>
+                            <p className="text-sm text-muted-foreground flex-1">Een interactieve tool om eilanden te verkennen en data te visualiseren.</p>
                         </div>
-                    </div>
+                    </a>
 
                     {/* Project 2 */}
-                    <div className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
+                    <a href="https://kuilvoer.github.io/LEGO_Dimensions/" target="_blank" rel="noopener noreferrer" className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
                         <div className="aspect-video bg-muted flex items-center justify-center relative overflow-hidden">
                             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-blue-500 via-background to-background group-hover:opacity-40 transition-opacity" />
                             <Box className="w-16 h-16 text-blue-500/50 group-hover:scale-110 transition-transform" />
                         </div>
                         <div className="p-6 flex-1 flex flex-col">
-                            <h3 className="text-xl font-bold font-heading text-foreground mb-2">LEGO Dimensions</h3>
+                            <h3 className="text-xl font-bold font-heading text-foreground mb-2 group-hover:text-blue-400 transition-colors">LEGO Dimensions</h3>
                             <p className="text-sm text-muted-foreground flex-1">Interactieve database: overzicht van alle karakters, abilities en uitgebreide filteropties.</p>
                         </div>
-                    </div>
+                    </a>
 
                     {/* Project 3 */}
-                    <div className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
+                    <a href="https://kuilvoer.github.io/gen3-pokedex/" target="_blank" rel="noopener noreferrer" className="bg-card rounded-3xl overflow-hidden border border-border group hover:border-cyan-500/50 transition-all flex flex-col">
                         <div className="aspect-video bg-muted flex items-center justify-center relative overflow-hidden">
                             <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-teal-500 via-background to-background group-hover:opacity-40 transition-opacity" />
                             <Database className="w-16 h-16 text-teal-500/50 group-hover:scale-110 transition-transform" />
                         </div>
                         <div className="p-6 flex-1 flex flex-col">
-                            <h3 className="text-xl font-bold font-heading text-foreground mb-2">Cobblemon Dashboard</h3>
-                            <p className="text-sm text-muted-foreground flex-1">Complexe game-data rondom mods en updates snel en visueel inzichtelijk gemaakt.</p>
+                            <h3 className="text-xl font-bold font-heading text-foreground mb-2 group-hover:text-teal-400 transition-colors">Gen3 Pokedex</h3>
+                            <p className="text-sm text-muted-foreground flex-1">Een complete, visuele Pokedex applicatie voor de derde generatie Pokémon.</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
             {/* Ideeën Generator */}
-            <section className="bg-gradient-to-b from-transparent to-cyan-950/10 rounded-3xl p-8 md:p-12 border border-border max-w-5xl mx-auto w-full">
+            <section className="bg-gradient-to-b from-transparent to-cyan-950/10 rounded-3xl p-8 md:p-12 border border-border">
                 <div className="text-center mb-10">
                     <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-4">Ideeën Generator</h2>
                     <p className="text-muted-foreground">Weet je even niet wat je moet bouwen? Begin hier.</p>
@@ -315,7 +312,7 @@ export default function VibecodingPage() {
             {/* Navigation */}
             <PageNavigation
                 prev={{ name: "Kritisch Denken", href: "/kritisch-denken" }}
-                next={{ name: "Home", href: "/" }}
+                next={{ name: "Bronnen", href: "/bronnen" }}
             />
         </div>
     );

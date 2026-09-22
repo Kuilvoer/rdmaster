@@ -7,11 +7,10 @@ export default function CriticalThinkingPage() {
     return (
         <div className="flex flex-col gap-16 pb-24">
             {/* Hero */}
-            <section className="relative pt-12 text-center md:text-left">
-                <div className="absolute top-0 right-0 -z-10 h-64 w-64 rounded-full bg-primary/20 blur-[100px] opacity-60" />
-
+            <section className="relative pt-12 text-center md:text-left overflow-hidden">
+                <div className="absolute top-0 right-0 -z-10 h-96 w-96 rounded-full bg-primary/20 blur-[100px] opacity-50" />
                 <span className="mb-4 inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-bold text-primary">
-                    Presentatie
+                    Product 7: Kritisch Denken
                 </span>
                 <h1 className="mb-6 font-heading text-5xl font-extrabold leading-tight md:text-7xl">
                     Kritisch <br className="md:hidden" /> <span className="text-primary">Denken</span>.
@@ -26,7 +25,7 @@ export default function CriticalThinkingPage() {
 
             {/* The Value of Friction */}
             <section className="bg-gradient-to-r from-primary/5 to-transparent p-8 md:p-12 rounded-3xl border-l-4 border-primary">
-                <div className="max-w-4xl">
+                <div>
                     <h2 className="font-heading text-3xl font-bold text-foreground mb-4">
                         Een pleidooi voor <span className="text-primary italic">Traagheid</span>
                     </h2>
@@ -128,10 +127,10 @@ export default function CriticalThinkingPage() {
 
             {/* The Solution: Driebaansweg */}
             <section className="space-y-16">
-                <div className="text-center max-w-3xl mx-auto">
+                <div className="text-center">
                     <h2 className="font-heading text-5xl font-bold mb-6 text-foreground">De Driebaansweg</h2>
                     <p className="text-xl text-muted-foreground font-serif italic mb-4">Een model van Dieter Vlaminck (2025) om te bepalen wanneer je AI inzet.</p>
-                    <p className="text-muted-foreground max-w-2xl mx-auto">
+                    <p className="text-muted-foreground">
                         In dit model wordt onderscheid gemaakt tussen drie banen: <strong>Keep It</strong>, <strong>Share It</strong> en <strong>Delegate It</strong>.
                         Het helpt studenten en docenten om bewuste keuzes te maken over de rol van AI in hun werkproces.
                         Niet alles hoeft geautomatiseerd te worden; soms is de worsteling van het zelf doen essentieel voor diepgaand begrip.
@@ -182,12 +181,12 @@ export default function CriticalThinkingPage() {
 
             {/* Practical Tools - Accordion */}
             <section className="bg-muted/30 p-8 md:p-12 rounded-3xl border border-border">
-                <div className="text-center max-w-2xl mx-auto mb-12">
+                <div className="text-center mb-12">
                     <h2 className="font-heading text-4xl font-bold mb-4 text-foreground">Tools voor Thuis</h2>
                     <p className="text-muted-foreground text-lg mb-6">Drie concrete technieken om metacognitie direct toe te passen, gebaseerd op de <em>Prompt Sandwich</em> theorie.</p>
                 </div>
 
-                <div className="max-w-4xl mx-auto">
+                <div>
                     <Accordion
                         items={[
                             {
@@ -237,7 +236,7 @@ export default function CriticalThinkingPage() {
             </section>
 
             {/* Conclusion */}
-            <section className="text-center max-w-3xl mx-auto space-y-8 mt-12">
+            <section className="text-center space-y-8 mt-12">
                 <p className="text-3xl font-heading font-black italic text-foreground leading-tight">
                     &quot;Kritisch denken in tijden van AI is geen kwestie van pessimisme. Het is een kwestie van <span className="text-primary">eigenaarschap</span>.&quot;
                 </p>
@@ -249,7 +248,7 @@ export default function CriticalThinkingPage() {
             </section>
             {/* Navigation */}
             <PageNavigation
-                prev={{ name: "Literatuurstudie", href: "/literatuurstudie" }}
+                prev={{ name: "Creëren met Technologie", href: "/creeren-met-technologie" }}
                 next={{ name: "Vibecoding", href: "/vibecoding" }}
             />
         </div>

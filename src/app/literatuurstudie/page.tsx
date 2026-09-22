@@ -74,7 +74,7 @@ export default function LiteratureStudyPage() {
     ];
 
     return (
-        <div className="flex flex-col gap-16">
+        <div className="flex flex-col gap-16 pb-24">
             {/* Hero */}
             <section className="relative pt-12 text-center md:text-left">
                 <div className="absolute top-0 right-0 -z-10 h-64 w-64 rounded-full bg-tertiary/20 blur-[100px] opacity-60" />
@@ -227,8 +227,9 @@ export default function LiteratureStudyPage() {
             {/* Navigation */}
             <PageNavigation
                 prev={{ name: "Digitale Didactiek", href: "/digitale-didactiek" }}
-                next={{ name: "Kritisch Denken", href: "/kritisch-denken" }}
+                next={{ name: "Gepersonaliseerd Leren (GOAI)", href: "/gepersonaliseerd-leren" }}
             />
         </div>
     );
 }
+
